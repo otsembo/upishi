@@ -1,0 +1,11 @@
+[versions]
+ktx_serialization = "1.5.0"
+ktx_serialization_plugin = "1.8.0"
+
+[libraries]
+ktx_serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "ktx_serialization" }
+
+[bundles]
+
+[plugins]
+ktx_serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "ktx_serialization_plugin" }
