@@ -1,15 +1,9 @@
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
-import data.repository.AppRepository
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import org.jetbrains.compose.web.renderComposable
 import ui.DayMeal
-
-// app data
-val repository = AppRepository()
+import ui.MealCategories
 
 fun main() {
     renderComposable(rootElementId = "root") {
@@ -35,13 +29,36 @@ fun App(){
                 DayMeal()
             }
 
+            ColumnSpacer()
+
             Div(attrs = {
-                classes("col", "s8")
+                classes("col", "s7")
+                style {
+                    paddingRight(35.percent)
+                }
             }){
-                Text("Hello World")
+
+                MealCategories()
+
             }
 
         }
 
     }
+}
+
+@Composable
+fun ColumnSpacer(
+    vararg classes: String,
+    styleData: StyleScope.() -> Unit = { },
+    content: @Composable () -> Unit = { }
+){
+
+    Div(attrs = {
+        style(styleData)
+        classes("col", "s1", *classes)
+    }){
+        content()
+    }
+
 }

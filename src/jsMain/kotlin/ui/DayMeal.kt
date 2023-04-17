@@ -18,34 +18,14 @@ fun DayMeal(){
             display( if(!isLoading)  DisplayStyle.Block else DisplayStyle.None)
         }
     }) {
-        RowItem {
-            H1(attrs = {
-                style {
-                    fontSize(20.px)
-                    display(DisplayStyle.Flex)
-                    flexDirection(FlexDirection.Row)
-                    alignContent(AlignContent.SpaceBetween)
-                }
-            }) {
 
-                Span(attrs = {
-                    classes("material-icons")
-                    style {
-                        marginRight(10.px)
-                    }
-                }) {
-                    Text("home")
-                }
-
-                Text("Today's Meal")
-            }
-        }
+        SectionTitle(title = "Today's Meal", icon = "home")
 
         RowItem {
             Img(src = "https://www.themealdb.com/images/media/meals/58oia61564916529.jpg", attrs = {
                 style {
                     width(100.percent)
-                    height(350.px)
+                    height(450.px)
                 }
             })
         }
@@ -92,10 +72,41 @@ fun LoadingBar(isLoading: Boolean = false){
 }
 
 @Composable
-fun RowItem(content: @Composable () -> Unit){
+fun RowItem(vararg classes: String, style: StyleScope.() -> Unit = { }, content: @Composable () -> Unit){
     Div(attrs = {
-        classes("row")
+        classes("row", *classes)
     }) {
         content()
     }
+}
+
+@Composable
+fun SectionTitle(title: String = "Hello Title", icon: String = "check_circle"){
+
+    RowItem {
+
+        H1(attrs = {
+            style {
+                fontSize(20.px)
+                display(DisplayStyle.Flex)
+                flexDirection(FlexDirection.Row)
+                alignContent(AlignContent.SpaceBetween)
+            }
+        }) {
+
+            Span(attrs = {
+                classes("material-icons")
+                style {
+                    marginRight(10.px)
+                }
+            }) {
+                Text(value = icon)
+            }
+
+            Text(value = title)
+        }
+
+    }
+
+
 }
