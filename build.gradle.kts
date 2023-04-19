@@ -2,7 +2,6 @@ plugins {
     kotlin("multiplatform")
     kotlin("plugin.serialization") version "1.8.0"
     id("org.jetbrains.compose")
-    kotlin("jvm") version "1.8.0"
 }
 
 group = "com.example"
@@ -49,8 +48,4 @@ kotlin {
             }
         }
     }
-    jvmToolchain(11)
 }
-//dependencies {
-//    implementation(kotlin("stdlib-jdk8"))
-//}
