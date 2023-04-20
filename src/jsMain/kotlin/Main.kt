@@ -4,6 +4,7 @@ import org.jetbrains.compose.web.dom.*
 import org.jetbrains.compose.web.renderComposable
 import ui.DayMeal
 import ui.MealCategories
+import ui.Meals
 
 fun main() {
     renderComposable(rootElementId = "root") {
@@ -33,13 +34,11 @@ fun App(){
 
             Div(attrs = {
                 classes("col", "s7")
-                style {
-                    paddingRight(35.percent)
-                }
             }){
 
                 MealCategories()
 
+                Meals()
             }
 
         }

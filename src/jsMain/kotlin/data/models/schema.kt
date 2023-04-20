@@ -78,3 +78,11 @@ data class Category(
     val strCategoryDescription: String,
     val strCategoryThumb: String
 )
+
+// Dessert items
+@Serializable
+data class Dessert(
+    val idMeal: String,
+    val strMeal: String,
+    val strMealThumb: String
+)

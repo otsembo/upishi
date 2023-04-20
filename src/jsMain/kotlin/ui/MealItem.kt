@@ -1,6 +1,7 @@
 package ui
 
 import androidx.compose.runtime.Composable
+import data.models.Dessert
 import data.models.Food
 import org.jetbrains.compose.web.css.padding
 import org.jetbrains.compose.web.css.percent
@@ -9,13 +10,16 @@ import org.jetbrains.compose.web.css.width
 import org.jetbrains.compose.web.dom.*
 
 @Composable
-fun MealItem(food: Food) {
+fun MealItem(dessert: Dessert) {
     Div(attrs = {
         classes("col", "s12", "m6", "l4")
         style {
-            padding(5.percent)
+            padding(.5.percent)
         }
     }) {
+
+        Div(attrs = {
+        }) {
 
         Div(attrs = {
             classes("card")
@@ -30,29 +34,22 @@ fun MealItem(food: Food) {
                 Div(attrs = {
                     classes("card-image")
                 }) {
-                    Img( src = food.thumbnail, attrs = {
-                        classes("responsive-img")
-                    })
-                }
-
-                // card title
-                Div(attrs = {
-                    classes("card-title")
-                }) {
-                    H1 {
-                        Text(food.name)
-                    }
+                    Img( src = dessert.strMealThumb, attrs = {
+                        style {
+                            width(100.percent)
+                        }})
                 }
 
             }
 
-            // card content
             Div(attrs = {
                 classes("card-content")
             }) {
                 P {
-                    Text(food.description)
+                    Text(dessert.strMeal)
                 }
+            }
+
             }
 
         }

@@ -75,6 +75,7 @@ fun LoadingBar(isLoading: Boolean = false){
 fun RowItem(vararg classes: String, style: StyleScope.() -> Unit = { }, content: @Composable () -> Unit){
     Div(attrs = {
         classes("row", *classes)
+        style(style)
     }) {
         content()
     }

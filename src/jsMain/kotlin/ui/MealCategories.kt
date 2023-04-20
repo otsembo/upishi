@@ -25,22 +25,6 @@ fun MealCategories(categories: List<String> = listOf("Breakfast", "Lunch", "Dinn
         }
     }
 
-    RowItem {
-        SectionTitle(title = "Popular", icon = "favorite")
-    }
-
-    RowItem{
-        Div(attrs = {
-            classes("row")
-        }){
-            categories.forEach { category ->
-                CategoryBadge(category)
-            }
-        }
-    }
-
-
-
 }
 
 @Composable
