@@ -1,8 +1,10 @@
-package ui
+package ui.components
 
 import androidx.compose.runtime.Composable
 import data.models.Dessert
 import org.jetbrains.compose.web.dom.Div
+import ui.fragments.RowItem
+import ui.fragments.SectionTitle
 
 @Composable
 fun Meals(){

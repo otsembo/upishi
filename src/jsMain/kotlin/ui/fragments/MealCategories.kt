@@ -1,4 +1,4 @@
-package ui
+package ui.fragments
 
 import androidx.compose.runtime.*
 import org.jetbrains.compose.web.attributes.href

@@ -1,4 +1,4 @@
-package ui
+package ui.components
 
 import androidx.compose.runtime.Composable
 import data.models.Dessert
