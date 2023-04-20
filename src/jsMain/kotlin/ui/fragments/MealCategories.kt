@@ -7,6 +7,8 @@ import org.jetbrains.compose.web.dom.A
 import org.jetbrains.compose.web.dom.Div
 import org.jetbrains.compose.web.dom.Span
 import org.jetbrains.compose.web.dom.Text
+import ui.components.RowItem
+import ui.components.SectionTitle
 
 @Composable
 fun MealCategories(categories: List<String> = listOf("Breakfast", "Lunch", "Dinner", "Snacks")) {

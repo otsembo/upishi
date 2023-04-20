@@ -1,13 +1,14 @@
-package ui.components
+package ui.fragments
 
 import androidx.compose.runtime.Composable
 import data.models.Dessert
 import org.jetbrains.compose.web.dom.Div
-import ui.fragments.RowItem
-import ui.fragments.SectionTitle
+import ui.components.MealItem
+import ui.components.RowItem
+import ui.components.SectionTitle
 
 @Composable
-fun Meals(){
+fun Meals( desserts: List<Dessert> = emptyList() ){
     RowItem {
         SectionTitle(title = "Popular", icon = "favorite")
     }
@@ -17,7 +18,9 @@ fun Meals(){
             classes("row")
         }){
 
-            MealItem(dessert = Dessert("1", "Chicken", "https://www.themealdb.com/images/media/meals/58oia61564916529.jpg"))
+            desserts.forEach { dessert ->
+                MealItem(dessert = dessert)
+            }
 
         }
     }
