@@ -1,6 +1,8 @@
 package ui
 
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
+import data.repository.AppRepository
+import network.AppResource
 import org.jetbrains.compose.web.css.StyleScope
 import org.jetbrains.compose.web.css.paddingTop
 import org.jetbrains.compose.web.css.percent
@@ -10,7 +12,12 @@ import ui.fragments.DayMeal
 import ui.fragments.MealCategories
 
 @Composable
-fun App(){
+fun App(appRepository: AppRepository = AppRepository()){
+
+    val meal = appRepository.getMealOfDay().collectAsState(AppResource.Loading())
+    val category = appRepository.getCategories().collectAsState(AppResource.Loading())
+    val dessert = appRepository.getDesserts().collectAsState(AppResource.Loading())
+
     Div(attrs = {
         classes("container")
         style {
@@ -24,7 +31,19 @@ fun App(){
             Div(attrs = {
                 classes("col", "s4")
             }){
-                DayMeal()
+
+                when(meal.value){
+                    is AppResource.Success -> {
+
+                    }
+                    is AppResource.Error -> {
+
+                    }
+                    else -> {
+
+                    }
+                }
+
             }
 
             ColumnSpacer()

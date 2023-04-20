@@ -1,28 +1,19 @@
 package ui.fragments
 
 import androidx.compose.runtime.*
+import data.models.Food
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 
 @Composable
-fun DayMeal(){
+fun DayMeal(food: Food){
 
-    var isLoading: Boolean by remember {
-        mutableStateOf(false)
-    }
-
-    LoadingBar(isLoading = isLoading)
-
-    Div(attrs = {
-        style{
-            display( if(!isLoading)  DisplayStyle.Block else DisplayStyle.None)
-        }
-    }) {
+    Div{
 
         SectionTitle(title = "Today's Meal", icon = "home")
 
         RowItem {
-            Img(src = "https://www.themealdb.com/images/media/meals/58oia61564916529.jpg", attrs = {
+            Img(src = food.thumbnail, attrs = {
                 style {
                     width(100.percent)
                     height(450.px)
@@ -37,7 +28,7 @@ fun DayMeal(){
                     color(Color("#555"))
                 }
             }) {
-                Text("Curry Chicken")
+                Text(food.name)
             }
         }
 
@@ -48,7 +39,7 @@ fun DayMeal(){
                     fontSize(24.px)
                 }
             }) {
-                Text("A small description of the meal")
+                Text(food.description)
             }
         }
 
