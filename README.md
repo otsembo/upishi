@@ -1,7 +1,7 @@
 # Upishi 
-![GitHub issues](https://img.shields.io/github.com/otsembo/issues/Upishi?color=blue)
-![GitHub contributors](https://img.shields.io/github.com/otsembo/contributors/Upishi?color=green)
-![GitHub repo size](https://img.shields.io/github.com/otsembo/repo-size/Upishi?color=purple)
+![GitHub issues](https://img.shields.io/github/otsembo/issues/Upishi?color=blue)
+![GitHub contributors](https://img.shields.io/github/otsembo/contributors/Upishi?color=green)
+![GitHub repo size](https://img.shields.io/github/otsembo/repo-size/Upishi?color=purple)
 
 - Upishi is a meal demo app created with Compose Web. 
 - Compose web is a declarative UI framework for building web applications using the 
