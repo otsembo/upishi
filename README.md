@@ -52,7 +52,7 @@ This section will guide you through setting up and running this repository on yo
 * run ~ ./gradlew jsBrowserRun
 
 ## Screens
-![](/home/prince/Pictures/Screenshot from 2023-04-22 02-33-06.png)
+![](/Screenshot from 2023-04-22 02-33-06.png)
 
 ## Authors
 * [Ian Okumu](https://github.com/otsembo)
