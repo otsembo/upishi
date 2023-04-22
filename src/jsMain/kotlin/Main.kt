@@ -4,6 +4,6 @@ import ui.App
 
 fun main() {
     renderComposable(rootElementId = "root") {
-       App()
+
     }
 }

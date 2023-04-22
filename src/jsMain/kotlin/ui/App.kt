@@ -21,99 +21,18 @@ fun App(appRepository: AppRepository = AppRepository()){
     val categories = appRepository.getCategories().collectAsState(AppResource.Loading())
     val desserts = appRepository.getDesserts().collectAsState(AppResource.Loading())
 
-    Div(attrs = {
-        classes("container-fluid")
-        style {
-            padding(2.percent)
-        }
-    }) {
-        Div(attrs = {
-            classes("row")
-        }){
+    // TODO: Add Main Container
 
-            Div(attrs = {
-                classes("col", "s4")
-            }){
-
-                with(meal.value){
-                    when(this){
-                        is AppResource.Error -> {
-                            ErrorMessage(message)
-                        }
-                        is AppResource.Loading -> {
-                            Loader()
-                        }
-                        is AppResource.Success -> {
-                            data?.meals?.get(0)?.let { DayMeal(it.toFood()) }
-                        }
-                    }
-                }
-
-            }
-
-            ColumnSpacer()
-
-            Div(attrs = {
-                classes("col", "s7")
-            }){
-
-                with(categories.value){
-                    when(this){
-                        is AppResource.Error -> {
-                            ErrorMessage(message)
-                        }
-                        is AppResource.Loading -> {
-                            Loader()
-                        }
-                        is AppResource.Success -> {
-                            val categoriesData =  data?.categories?.map { it.strCategory } ?: emptyList()
-                            MealCategories(categories = categoriesData)
-                        }
-                    }
-                }
-
-
-                with(desserts.value){
-                    when(this){
-                        is AppResource.Error -> {
-                            ErrorMessage(message)
-                        }
-                        is AppResource.Loading -> {
-                            Loader()
-                        }
-                        is AppResource.Success -> {
-                            val dessertData = data?.desserts ?: emptyList()
-                            Meals(desserts = dessertData)
-                        }
-                    }
-                }
-
-            }
-
-        }
-
-    }
 }
 
+// TODO: Add Spacer (css classes, style, content)
 @Composable
-fun ColumnSpacer(
-    vararg classes: String,
-    styleData: StyleScope.() -> Unit = { },
-    content: @Composable () -> Unit = { }
-){
-
-    Div(attrs = {
-        style(styleData)
-        classes("col", "s1", *classes)
-    }){
-        content()
-    }
+fun ColumnSpacer(){
 
 }
 
+// TODO: Add Error Message
 @Composable
 fun ErrorMessage(message: String?){
-    H1 {
-        Text(value = message!!)
-    }
+
 }

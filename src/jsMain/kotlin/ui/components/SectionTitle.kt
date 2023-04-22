@@ -6,30 +6,9 @@ import org.jetbrains.compose.web.dom.H1
 import org.jetbrains.compose.web.dom.Span
 import org.jetbrains.compose.web.dom.Text
 
+// TODO: Add section title with icon
 @Composable
 fun SectionTitle(title: String = "Hello Title", icon: String = "check_circle"){
-    RowItem {
 
-        H1(attrs = {
-            style {
-                fontSize(20.px)
-                display(DisplayStyle.Flex)
-                flexDirection(FlexDirection.Row)
-                alignContent(AlignContent.SpaceBetween)
-            }
-        }) {
-
-            Span(attrs = {
-                classes("material-icons")
-                style {
-                    marginRight(10.px)
-                }
-            }) {
-                Text(value = icon)
-            }
-
-            Text(value = title)
-        }
-    }
 
 }

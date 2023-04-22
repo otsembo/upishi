@@ -7,21 +7,8 @@ import ui.components.MealItem
 import ui.components.RowItem
 import ui.components.SectionTitle
 
+// TODO: Add Popular Meals List
 @Composable
 fun Meals( desserts: List<Dessert> = emptyList() ){
-    RowItem {
-        SectionTitle(title = "Popular", icon = "favorite")
-    }
 
-    RowItem{
-        Div(attrs = {
-            classes("row")
-        }){
-
-            desserts.forEach { dessert ->
-                MealItem(dessert = dessert)
-            }
-
-        }
-    }
 }
