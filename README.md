@@ -3,24 +3,20 @@
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
 [![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
-<!-- ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
-![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white) -->
+[![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub contributors](https://img.shields.io/github/contributors/otsembo/upishi.svg)
 
+Upishi is a meals' demo app created with Compose Web. 
 
-
-- Upishi is a meal demo app created with Compose Web. 
-- Compose web is a declarative UI framework for building web applications using the 
-  Kotlin Programming Lnaguage. Upishi consumes the Meal DB API. From the app UI's landing page a user is able to view 
-  Today's meal and the steps to prepare it, a user can choose to view different meals from the categories section and 
-  finally user can view a list of the featured popular selections from the popular section.
+Compose Web is a declarative UI framework for building web applications using Kotlin. Upishi consumes the [Meal DB API](https://themealdb.com/). The app UI has a landing page where one can view 
+today's meal and the steps required to prepare it. One can view different meals from the categories section and 
+finally user can view a list of desserts from the popular section.
 
 ## Tools used
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=blue)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=orange)
-![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=yellow)
 
+Upishi was built using the following:
 
 * `Kotlin v1.8.0`
 * `ktro-client 2.2.4`
@@ -30,16 +26,18 @@
 * `Compose Web`
 
 ## Prerequisites
-In order to use this repository, you will need to have the following setup in your computer.
+In order to use this example, you will need to have the following setup in your computer.
 
-- Intellij idea
+- Code Editor (IntelliJ IDEA / VSCode)
+- Java 8 or higher
+- Windows / Linux / Mac OS
 
 
 ## Project Setup Instructions
 
 This section will guide you through setting up and running this repository on your local machine.
 
-* Clone the main brach of repository
+* Clone the main branch of repository
     ```
     git clone git@github.com/otsembo/upishi.git
     ```
@@ -47,9 +45,12 @@ This section will guide you through setting up and running this repository on yo
     ```
     cd upishi
     ```
-* Open in intellij idea / vscode
+* Open the project in a code editor of your choice.
 
-* run ~ ./gradlew jsBrowserRun
+* In order to run the application, run the following command
+    ```
+    ./gradlew jsBrowserRun
+    ```
 
 ## Screens
 ![](https://github.com/otsembo/upishi/blob/prince475-patch-1/Screenshot%20from%202023-04-22%2002-33-06.png)
