@@ -3,9 +3,6 @@
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
-[![GitHub branches](https://badgen.net/github/branches/otsembo/upishi/main)](https://github.com/otsembo/upishi/main)
-[![GitHub forks](https://img.shields.io/github/forks/otsembo/upishi.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/otsembo/upishi/network/)
-[![GitHub stars](https://img.shields.io/github/stars/otsembo/upishi.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/otsembo/upishi/stargazers/)
 [![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
 
 
