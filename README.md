@@ -1,7 +1,16 @@
 # Upishi 
-![GitHub issues](https://img.shields.io/github/otsembo/issues/upishi?color=blue)
-![GitHub contributors](https://img.shields.io/github/otsembo/contributors/upishi?color=green)
-![GitHub repo size](https://img.shields.io/github/otsembo/repo-size/upishi?color=purple)
+	https://img.shields.io/github/issues-pr/{otsembo}/{upishi}.svg
+  https://img.shields.io/github/issues/{otsembo}/{upishi}.svg
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/otsembo/upishi/graphs/commit-activity)
+[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
+[![GitHub branches](https://badgen.net/github/branches/otsembo/Strapdown.js)](https://github.com/otsembo/Strapdown.js/)
+[![GitHub forks](https://img.shields.io/github/forks/otsembo/upishi.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/otsembo/upishi/network/)
+[![GitHub stars](https://img.shields.io/github/stars/otsembo/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/otsembo/StrapDown.js/stargazers/)
+[![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
+
+
 
 - Upishi is a meal demo app created with Compose Web. 
 - Compose web is a declarative UI framework for building web applications using the 
