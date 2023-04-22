@@ -53,7 +53,9 @@ This section will guide you through setting up and running this repository on yo
     ```
 
 ## Screens
-![](https://github.com/otsembo/upishi/blob/prince475-patch-1/Screenshot%20from%202023-04-22%2002-33-06.png)
+Have a look at the app's UI.
+
+![Home](screens/Screenshot%20from%202023-04-22%2002-33-06.png)
 
 ## Authors
 * [Ian Okumu](https://github.com/otsembo)
